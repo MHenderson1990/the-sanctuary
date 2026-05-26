@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Sanctuary by Coco Love — A sacred space for spiritual connection, handcrafted jewelry, curated books, tarot readings, and emotional wellness." />
+  <meta name="keywords" content="tarot readings, spiritual wellness, jewelry, birth chart, emotional wellness, poetry, motivational texts, coco love" />
+  <title>The Sanctuary | Coco Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════
+     NAVIGATION
+════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" onclick="showPage('home')">
+    <div class="nav-logo-icon">🌿</div>
+    The <em>Sanctuary</em>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="showPage('home')" class="active" data-page="home">Home</a></li>
+    <li><a onclick="showPage('shop')" data-page="shop">Shop</a></li>
+    <li><a onclick="showPage('services')" data-page="services">Services</a></li>
+    <li><a onclick="showPage('poetry')" data-page="poetry">Poetry</a></li>
+    <li><a onclick="showPage('blog')" data-page="blog">Blog</a></li>
+    <li><a onclick="showPage('contact')" data-page="contact">Contact</a></li>
+    <li><a onclick="showPage('services')" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════
+     HOME PAGE
+════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+
+    <!-- Botanical SVG decorations -->
+    <svg class="hero-botanical hero-botanical-tl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 190 Q50 100 100 60 Q80 120 10 190Z" fill="#7D9B76"/>
+      <path d="M30 180 Q90 90 150 50 Q120 130 30 180Z" fill="#5B7A54"/>
+      <path d="M5 150 Q60 80 130 40 Q100 120 5 150Z" fill="#7D9B76" opacity="0.6"/>
+      <line x1="10" y1="190" x2="100" y2="60" stroke="#5B7A54" stroke-width="1"/>
+    </svg>
+    <svg class="hero-botanical hero-botanical-br" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 190 Q50 100 100 60 Q80 120 10 190Z" fill="#7D9B76"/>
+      <path d="M30 180 Q90 90 150 50 Q120 130 30 180Z" fill="#5B7A54"/>
+      <path d="M5 150 Q60 80 130 40 Q100 120 5 150Z" fill="#7D9B76" opacity="0.6"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="hero-badge">✦ <span>Sacred Space</span> ✦ Welcome Home ✦</div>
+      <h1>Sanctuary for the<br><em>Soul</em></h1>
+      <p class="hero-sub">Welcome to The Sanctuary! A sanctuary for the soul, where you can
+        shop handcrafted jewelry, curated poetry, book spiritual readings/consultations, and 
+        subscribe to daily doses of inspiration by Coco Love.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="showPage('shop')">Shop</button>
+        <button class="btn-outline" onclick="showPage('services')">Book a Reading</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Blocks -->
+  <section class="features-section">
+    <div class="three-col">
+      <div class="feature-block">
+        <div class="feature-block-icon">💎</div>
+        <h3>Sacred Jewelry</h3>
+        <p>Handpicked pieces crafted with intention, designed to ground and inspire your daily journey.</p>
+        <span class="feature-link" onclick="showPage('shop')">Shop Jewelry →</span>
+      </div>
+      <div class="feature-block">
+        <div class="feature-block-icon">🔮</div>
+        <h3>Spiritual Readings</h3>
+        <p>Divination, birth chart readings, and emotional wellness sessions to guide you toward clarity and purpose.</p>
+        <span class="feature-link" onclick="showPage('services')">Book a Session →</span>
+      </div>
+      <div class="feature-block">
+        <div class="feature-block-icon">📖</div>
+        <h3>Curated Poetry</h3>
+        <p>Explore vulnerability through Coco Love's original poetry and spoken word.</p>
+        <span class="feature-link" onclick="showPage('shop')">Browse Books →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Banner -->
+  <div class="quote-banner">
+    <blockquote>"Love yourself a little deeper this time."</blockquote>
+    <cite>— Coco Love</cite>
+  </div>
+
+  <!-- Featured Products -->
+  <section class="section" style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="section-eyebrow">New Arrivals</div>
+      <h2 class="section-title">Featured <em>Pieces</em></h2>
+      <p class="section-subtitle">Handpicked with love and intention, just for you.</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image"><img src="brace.jpg" style="width:100%; height:100%; object-fit:cover;" /><span class="product-badge">New</span></div>
+          <div class="product-info">
+            <p class="product-category">Jewelry</p>
+            <h3 class="product-name">Smoky Quartz Bracelet</h3>
+            <p class="product-desc"> For healing, protection, grounding, and cleansing your aura.</p>
+            <div class="product-footer"><span class="product-price">$11.11</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
+          </div>
+        </div>
+        <div class="product-card">
+      <div class="product-image"><img src="FOI.jpg" style="width:100%; height:100%; object-fit:cover;" /><span class="product-badge">Bestseller</span></div>
+          <div class="product-info">
+            <p class="product-category">Books</p>
+            <h3 class="product-name">Fear of Intimacy: Poetry for the Avoidant Lover Girl</h3>
+            <p class="product-desc">A story of transformation and facing our fears, told through poetry.</p>
+            <div class="product-footer"><span class="product-price">$22.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image"><img src="hair.jpg" style="width: 100%; height: 100%; object-fit:cover;" /></div>
+          <div class="product-info">
+            <p class="product-category">Jewelry</p>
+            <h3 class="product-name">Hair Jewels</h3>
+            <p class="product-desc">Hand wrapped copper jewels, adorned with healing crystals for your crown.</p>
+            <div class="product-footer"><span class="product-price">$11.11</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMS Signup -->
+  <div class="sms-section">
+    <div class="section-eyebrow" style="justify-content:center; margin-bottom:1rem;">Daily Inspiration</div>
+    <h2>Motivation Sent Straight to Your Phone</h2>
+    <p>Sign up for Coco's daily inspirational texts — your morning reminder to show up for yourself.</p>
+    <form class="sms-form" onsubmit="handleSmsSignup(event)">
+      <input type="tel" placeholder="Enter your phone number" required />
+      <button type="submit">Sign Me Up ✨</button>
+    </form>
+  </div>
+
+  <!-- BIO SECTION -->
+  <div class="bio-section">
+    <div class="bio-inner">
+
+      <!-- LEFT: Photo -->
+      <div class="bio-left">
+        <!-- Corner botanical SVGs -->
+        <svg class="bio-corner-leaf bio-corner-leaf-tl" viewBox="0 0 200 200" fill="none">
+          <path d="M10 190 Q50 100 100 60 Q80 120 10 190Z" fill="#7D9B76"/>
+          <path d="M30 180 Q90 90 150 50 Q120 130 30 180Z" fill="#5B7A54"/>
+          <path d="M5 150 Q60 80 130 40 Q100 120 5 150Z" fill="#A8C4A2" opacity="0.5"/>
+        </svg>
+        <svg class="bio-corner-leaf bio-corner-leaf-br" viewBox="0 0 200 200" fill="none">
+          <path d="M10 190 Q50 100 100 60 Q80 120 10 190Z" fill="#7D9B76"/>
+          <path d="M30 180 Q90 90 150 50 Q120 130 30 180Z" fill="#5B7A54"/>
+          <path d="M5 150 Q60 80 130 40 Q100 120 5 150Z" fill="#A8C4A2" opacity="0.5"/>
+        </svg>
+
+        <div class="bio-photo-stack">
+          <div class="bio-ring"></div>
+          <div class="bio-ring-2"></div>
+
+          <div class="bio-photo-frame" id="bioPhotoFrame">
+            <img id="bioPhoto" src="kelli.jpeg" alt="Coco Love" class="loaded"/>
+          </div>
+          <div class="bio-name-tag">Coco Love</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Text -->
+      <div class="bio-right">
+        <div class="bio-text-inner">
+          <span class="bio-eyebrow">Meet Your Guide</span>
+          <h2 class="bio-name">Hi, I'm <em>Coco Love</em></h2>
+          <p class="bio-title-line">Spiritual Guide · Poet · Creator</p>
+          <div class="bio-divider"></div>
+
+          <p>I am a poet, storyteller and motivational speaker from Dallas, Texas.
+             I believe in the power of alchemy, and I use my writing as a way to heal, and transform pain to beauty
+             and a deeper understanding of life. My poetry is a channeling from Spirit and often, a love letter 
+             to the parts of ourselves we're taught to hide. <br> Additionally, the jewelry I create is an extension
+             of the same intention with each piece handcrafted to carry energy, tell a story, and to remind you of 
+             your own worth. 
+          </p>
+
+          <div class="bio-pull-quote">
+            <p>"Whether you find me through a piece of jewelry, a spiritual reading, or a poem — I want you to leave 
+              feeling a little lighter, a little more rooted, and a whole lot more you."</p>
+          </div>
+
+
+          <button class="btn-primary" onclick="showPage('services')">Work With Me</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Poetry Teaser -->
+  <div class="poetry-teaser">
+    <div class="section-eyebrow" style="justify-content:center; color:var(--sage-light); margin-bottom:1rem;">
+      Coco's Words
+    </div>
+    <h2>Poetry from <em>the Soul</em></h2>
+    <p>Raw, real, and rooted. Read her words. Hear her voice. Feel every word.</p>
+    <button class="btn-primary" onclick="showPage('poetry')" style="position:relative; z-index:1;">Explore the Poetry</button>
+  </div>
+
+</div><!-- end home -->
+
+<!-- ════════════════════════════════
+     SHOP PAGE
+════════════════════════════════ -->
+<div id="page-shop" class="page">
+  <section class="section" style="padding-top: 3.5rem;">
+    <div class="section-inner">
+      <div class="section-eyebrow">The Collection</div>
+      <h2 class="section-title">Shop <em>The Sanctuary</em></h2>
+      <p class="section-subtitle">Sacred pieces and soulful reads, curated with love and intention.</p>
+
+      <div class="shop-filters">
+        <button class="filter-btn active" onclick="filterShop('all', this)">All</button>
+        <button class="filter-btn" onclick="filterShop('jewelry', this)">Jewelry</button>
+        <button class="filter-btn" onclick="filterShop('books', this)">Books</button>
+      </div>
+
+      <div class="product-grid" id="shopGrid">
+        <div class="product-card" data-category="jewelry">
+          <div class="product-image">💎<span class="product-badge">New</span></div>
+          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Moonstone Healing Bracelet</h3><p class="product-desc">A calming stone for intuition and new beginnings. Sterling silver setting.</p><div class="product-footer"><span class="product-price">$38.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="jewelry">
+          <div class="product-image">🌿</div>
+          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Sage & Amber Pendant</h3><p class="product-desc">Grounding energy wrapped in earthy, warm tones. Adjustable chain.</p><div class="product-footer"><span class="product-price">$45.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="jewelry">
+          <div class="product-image">🌙</div>
+          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Crescent Moon Ear Cuff</h3><p class="product-desc">Channel lunar energy with this delicate gold-toned cuff.</p><div class="product-footer"><span class="product-price">$28.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="jewelry">
+          <div class="product-image">🪬</div>
+          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Protective Eye Necklace</h3><p class="product-desc">Ward off negativity with this stunning evil eye pendant.</p><div class="product-footer"><span class="product-price">$32.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="jewelry">
+          <div class="product-image">🌸</div>
+          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Rose Quartz Ring</h3><p class="product-desc">Open your heart to love and compassion with this soft pink gem.</p><div class="product-footer"><span class="product-price">$36.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="books">
+          <div class="product-image">📗<span class="product-badge">Bestseller</span></div>
+          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">The Art of Inner Peace</h3><p class="product-desc">A guided journey to emotional freedom and stillness. 240 pages.</p><div class="product-footer"><span class="product-price">$22.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="books">
+          <div class="product-image">📙</div>
+          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Healing Through the Stars</h3><p class="product-desc">Astrology as a tool for self-discovery and emotional growth.</p><div class="product-footer"><span class="product-price">$19.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="books">
+          <div class="product-image">📕</div>
+          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Root & Rise Journal</h3><p class="product-desc">A guided journal for grounding, reflection, and intentional living.</p><div class="product-footer"><span class="product-price">$24.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+        <div class="product-card" data-category="books">
+          <div class="product-image">📒</div>
+          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Sacred Feminine Rising</h3><p class="product-desc">Reclaim your power, your intuition, and your divine femininity.</p><div class="product-footer"><span class="product-price">$26.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
+        </div>
+      </div>
+
+      <div style="background:var(--light-cream); border-radius:20px; padding:2.5rem; text-align:center; margin-top:3rem; border:2px dashed rgba(196,168,130,0.4);">
+        <p style="font-size:0.68rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--sage); font-weight:700; margin-bottom:0.5rem;">💳 Secure Checkout</p>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; color:var(--dark-brown); margin-bottom:0.5rem;">Powered by Square</h3>
+        <p style="color:var(--light-text); font-size:0.85rem; max-width:420px; margin:0 auto;">Square payment processing will be embedded here. Customers can pay securely with any major card.</p>
+      </div>
+    </div>
+  </section>
+</div><!-- end shop -->
+
+<!-- ════════════════════════════════
+     SERVICES PAGE
+════════════════════════════════ -->
+<div id="page-services" class="page">
+  <section class="section services-section">
+    <div class="section-inner">
+      <div class="section-eyebrow">Work With Coco</div>
+      <h2 class="section-title">Services & <em>Sessions</em></h2>
+      <p class="section-subtitle">Every session is a sacred space held with care, intention, and unconditional love.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrap">🃏</div>
+          <h3>Spiritual Reading</h3>
+          <p>In this session, I create a sacred space for you to reconnect with your inner truth. 
+            Using intuitive insight and Spirit, I meet you exactly where you are — offering clarity, 
+            healing, and honest reflection to help guide you forward.</p>
+          <p class="service-price">From $65.00</p>
+          <span class="service-duration">⏱ 45 – 60 minutes</span>
+          <br><button class="book-btn" onclick="openBooking()">Book This Session</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">💚</div>
+          <h3>Emotional Wellness</h3>
+          <p>A nurturing, non-judgmental space to process, heal, and reconnect with yourself. These sessions blend spiritual coaching with practical emotional support to help you feel whole again.</p>
+          <p class="service-price">From $80.00</p>
+          <span class="service-duration">⏱ 60 minutes</span>
+          <br><button class="book-btn" onclick="openBooking()">Book This Session</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">⭐</div>
+          <h3>Birth Chart Reading</h3>
+          <p>Your birth chart is the blueprint of your soul. 
+            I walk you through your natal chart to uncover your gifts, challenges, 
+            and the cosmic story written for you at the very moment of your birth.</p>
+          <p class="service-price">From $75.00</p>
+          <span class="service-duration">⏱ 60 – 75 minutes</span>
+          <br><button class="book-btn" onclick="openBooking()">Book This Session</button>
+        </div>
+      </div>
+
+      <div class="booking-placeholder">
+        <p style="font-size:0.68rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--sage); font-weight:700; margin-bottom:0.75rem;">📅 Schedule</p>
+        <h3>Book Your Session</h3>
+        <p>Your booking calendar will live here. Connect Calendly, Acuity, or Square Appointments to let clients choose their date and time.</p>
+        <button class="btn-primary" onclick="openBooking()">View Available Times</button>
+      </div>
+    </div>
+  </section>
+</div><!-- end services -->
+
+<!-- ════════════════════════════════
+     POETRY PAGE
+════════════════════════════════ -->
+<div id="page-poetry" class="page">
+  <section class="section poetry-section">
+    <div class="section-inner">
+      <div class="section-eyebrow" style="color:var(--sage-light); --sage:var(--sage-light);">Coco's Words</div>
+      <h2 class="section-title">Poetry</h2>
+      <p class="section-subtitle">Words born from lived experience. Read them. Feel them. Hear Coco bring them to life.</p>
+
+      <div class="poetry-grid">
+        <div class="poem-card">
+          <div class="poem-icon">🌿</div><h3>Rooted</h3>
+          <p class="poem-preview">"Even trees that bend in the storm / know exactly where home is..."</p>
+          <div class="poem-tags"><span class="poem-tag">Healing</span><span class="poem-tag">Strength</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('rooted')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('rooted', true)">🎧 Listen</button>
+          </div>
+        </div>
+        <div class="poem-card">
+          <div class="poem-icon">🌙</div><h3>Quiet Moon</h3>
+          <p class="poem-preview">"She doesn't need to be seen to be powerful / the moon has always known this..."</p>
+          <div class="poem-tags"><span class="poem-tag">Feminine</span><span class="poem-tag">Stillness</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('quietmoon')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('quietmoon', true)">🎧 Listen</button>
+          </div>
+        </div>
+        <div class="poem-card">
+          <div class="poem-icon">🔥</div><h3>Rising</h3>
+          <p class="poem-preview">"I did not survive the fire to be afraid of sparks / I am the light now..."</p>
+          <div class="poem-tags"><span class="poem-tag">Growth</span><span class="poem-tag">Resilience</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('rising')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('rising', true)">🎧 Listen</button>
+          </div>
+        </div>
+        <div class="poem-card">
+          <div class="poem-icon">💧</div><h3>Let It Flow</h3>
+          <p class="poem-preview">"Grief is just love with nowhere left to go / so I let it pour..."</p>
+          <div class="poem-tags"><span class="poem-tag">Grief</span><span class="poem-tag">Healing</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('flow')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('flow', true)">🎧 Listen</button>
+          </div>
+        </div>
+        <div class="poem-card">
+          <div class="poem-icon">🌸</div><h3>Soft & Strong</h3>
+          <p class="poem-preview">"Softness is not a weakness / it is the bravest armor I have ever worn..."</p>
+          <div class="poem-tags"><span class="poem-tag">Self-love</span><span class="poem-tag">Empowerment</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('soft')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('soft', true)">🎧 Listen</button>
+          </div>
+        </div>
+        <div class="poem-card">
+          <div class="poem-icon">⭐</div><h3>Written in Stars</h3>
+          <p class="poem-preview">"Before you were a name / you were a constellation / the sky still remembers you..."</p>
+          <div class="poem-tags"><span class="poem-tag">Spiritual</span><span class="poem-tag">Purpose</span></div>
+          <div class="poem-actions">
+            <button class="poem-btn poem-btn-read" onclick="openPoem('stars')">📖 Read</button>
+            <button class="poem-btn poem-btn-listen" onclick="openPoem('stars', true)">🎧 Listen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end poetry -->
+
+<!-- ════════════════════════════════
+     BLOG PAGE
+════════════════════════════════ -->
+<div id="page-blog" class="page">
+  <section class="section" style="padding-top: 3.5rem;">
+    <div class="section-inner">
+      <div class="section-eyebrow">Coco's Corner</div>
+      <h2 class="section-title">The <em>Blog</em></h2>
+      <p class="section-subtitle">Thoughts, tools, and truths for the soul in progress.</p>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-image blog-image-1">🌿</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Wellness</span><span class="blog-date">April 10, 2026</span></div>
+            <h3>5 Grounding Rituals to Start Your Morning With Intention</h3>
+            <p>How you begin your morning sets the tone for everything that follows. These five simple practices will help you root in your body...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-image blog-image-2">🃏</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Tarot</span><span class="blog-date">March 28, 2026</span></div>
+            <h3>What Your Tarot Birth Card Reveals About Your Soul's Purpose</h3>
+            <p>Most people know their sun sign, but fewer know their tarot birth card — a powerful number that reveals the core lesson your soul chose...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-image blog-image-3">⭐</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Astrology</span><span class="blog-date">March 15, 2026</span></div>
+            <h3>Understanding Your Rising Sign and Why It Changes Everything</h3>
+            <p>Your rising sign is the door through which the world first enters you. Understanding it can unlock so much about how others experience your presence...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-image blog-image-4">💚</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Healing</span><span class="blog-date">March 3, 2026</span></div>
+            <h3>Why Feeling Everything Is Actually a Superpower</h3>
+            <p>We've been taught that sensitivity is a liability. But what if feeling deeply is the very thing that makes you powerful?...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-image blog-image-5">🌙</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Spirituality</span><span class="blog-date">February 20, 2026</span></div>
+            <h3>Full Moon Rituals for Releasing What No Longer Serves You</h3>
+            <p>The full moon is nature's permission slip to let go. Here are the rituals Coco personally uses each month to honor the cycle...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-image blog-image-6">💎</div>
+          <div class="blog-content">
+            <div class="blog-meta"><span class="blog-category">Crystals</span><span class="blog-date">February 8, 2026</span></div>
+            <h3>The Top 7 Crystals for Emotional Healing & How to Use Them</h3>
+            <p>Crystals aren't magic — they're mirrors. These seven stones carry vibrations that gently remind your nervous system of what peace feels like...</p>
+            <a class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end blog -->
+
+<!-- ════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <section class="section" style="padding-top: 3.5rem; background: var(--light-cream);">
+    <div class="section-inner">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+      <p class="section-subtitle">Have a question, a collaboration idea, or just need to feel seen? Coco's here.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card">
+          <h3>You're in the right place.</h3>
+          <p style="margin-top:0.75rem;">Whether you're curious about a session, a product, or just need a moment — this is a safe space. Reach out anytime and expect a warm, genuine response.</p>
+
+          <div style="margin-top: 2rem;">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📧</div>
+              hello@thesanctuarybycoco.com
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📱</div>
+              Daily texts — sign up on the Home page
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              shopcocolove.com
+            </div>
+          </div>
+
+          <p style="font-size:0.68rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--sage-light); font-weight:700; margin-top:2rem; margin-bottom:0.75rem;">Follow Along</p>
+          <div class="social-links">
+            <a href="https://instagram.com/cocolove" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@cocolove" target="_blank" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>Send a Message 💌</h3>
+          <form onsubmit="handleContact(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Jasmine" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Williams" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <select>
+                <option value="">Select a topic...</option>
+                <option>General Inquiry</option>
+                <option>Book a Session</option>
+                <option>Shop / Order Question</option>
+                <option>Collaboration</option>
+                <option>Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Share what's on your heart..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end contact -->
+
+<!-- ════════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>The Sanctuary</h3>
+        <p class="footer-tagline">A sacred space by Coco Love</p>
+        <p>A home for healing, growth, and spiritual connection — where every piece, poem, and session is offered with intention and love.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/cocolove" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@cocolove" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('shop')">Shop</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('poetry')">Poetry</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sessions</h4>
+        <ul>
+          <li><a onclick="showPage('services')">Tarot Reading</a></li>
+          <li><a onclick="showPage('services')">Emotional Wellness</a></li>
+          <li><a onclick="showPage('services')">Birth Chart Reading</a></li>
+          <li><a onclick="openBooking()">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a onclick="showPage('contact')">Contact</a></li>
+          <li><a href="https://instagram.com/cocolove" target="_blank">Instagram</a></li>
+          <li><a href="https://tiktok.com/@cocolove" target="_blank">TikTok</a></li>
+          <li><a onclick="showPage('home')">Daily Text Signup</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Sanctuary by Coco Love. All Rights Reserved.</span>
+      <span>shopcocolove.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════
+     POEM MODAL
+════════════════════════════════ -->
+<div class="modal-overlay" id="poemModal" onclick="closePoemModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closePoemModalDirect()">✕</button>
+    <p class="modal-tag" id="modalTag">Poetry</p>
+    <h2 id="modalTitle"></h2>
+    <div class="poem-text" id="modalText"></div>
+    <div class="audio-player">
+      <h4>🎧 Listen to Coco Read This Poem</h4>
+      <div id="audioContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════
+     BOOKING MODAL
+════════════════════════════════ -->
+<div class="modal-overlay" id="bookingModal" onclick="closeBookingModal(event)">
+  <div class="modal" style="text-align:center;">
+    <button class="modal-close" onclick="document.getElementById('bookingModal').classList.remove('open')">✕</button>
+    <p class="modal-tag">✦ Schedule Your Session</p>
+    <h2>Book With Coco</h2>
+    <p style="color:var(--light-text); margin:0 auto 2rem; font-size:0.9rem; max-width:380px;">Your scheduling calendar will be connected here. Once your booking platform is set up, clients can book and pay in one place.</p>
+    <div style="background:var(--light-cream); border-radius:16px; padding:2rem; margin-bottom:1.5rem; border:1px dashed var(--nude);">
+      <p style="font-size:0.85rem; color:var(--light-text); font-style:italic;">📅 Connect Calendly, Acuity, or Square Appointments here</p>
+    </div>
+    <button class="btn-outline" onclick="document.getElementById('bookingModal').classList.remove('open')">Close</button>
+  </div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
