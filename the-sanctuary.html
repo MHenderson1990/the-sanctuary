@@ -17,7 +17,7 @@
 ════════════════════════════════ -->
 <nav>
   <a class="nav-logo" onclick="showPage('home')">
-    <div class="nav-logo-icon">🌿</div>
+    <div class="nav-logo-icon"><img src="THE SANCTUARY.png" style="width:35px; height:35px; object-fit:contain;" /></div>
     The <em>Sanctuary</em>
   </a>
   <ul class="nav-links" id="navLinks">
@@ -59,8 +59,9 @@
     </svg>
 
     <div class="hero-content">
-      <div class="hero-badge">✦ <span>Sacred Space</span> ✦ Welcome Home ✦</div>
-      <h1>Sanctuary for the<br><em>Soul</em></h1>
+  <img src="THE SANCTUARY.png" style="width:350px; height:350px; object-fit:contain; margin-bottom:1rem; display:block; margin-left:auto; margin-right:auto;" />
+  <div class="hero-badge">✦ <span>Sacred Space</span> ✦ Welcome Home ✦</div>
+      <h1 style="font-size:2.5rem;">Sanctuary for the<br><em>Soul</em></h1>
       <p class="hero-sub">Welcome to The Sanctuary! A sanctuary for the soul, where you can
         shop handcrafted jewelry, curated poetry, book spiritual readings/consultations, and 
         subscribe to daily doses of inspiration by Coco Love.</p>
@@ -107,35 +108,22 @@
       <div class="section-eyebrow">New Arrivals</div>
       <h2 class="section-title">Featured <em>Pieces</em></h2>
       <p class="section-subtitle">Handpicked with love and intention, just for you.</p>
+      
       <div class="product-grid">
-        <div class="product-card">
-          <div class="product-image"><img src="brace.jpg" style="width:100%; height:100%; object-fit:cover;" /><span class="product-badge">New</span></div>
-          <div class="product-info">
-            <p class="product-category">Jewelry</p>
-            <h3 class="product-name">Smoky Quartz Bracelet</h3>
-            <p class="product-desc"> For healing, protection, grounding, and cleansing your aura.</p>
-            <div class="product-footer"><span class="product-price">$11.11</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
-          </div>
-        </div>
-        <div class="product-card">
-      <div class="product-image"><img src="FOI.jpg" style="width:100%; height:100%; object-fit:cover;" /><span class="product-badge">Bestseller</span></div>
-          <div class="product-info">
-            <p class="product-category">Books</p>
-            <h3 class="product-name">Fear of Intimacy: Poetry for the Avoidant Lover Girl</h3>
-            <p class="product-desc">A story of transformation and facing our fears, told through poetry.</p>
-            <div class="product-footer"><span class="product-price">$22.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image"><img src="hair.jpg" style="width: 100%; height: 100%; object-fit:cover;" /></div>
-          <div class="product-info">
-            <p class="product-category">Jewelry</p>
-            <h3 class="product-name">Hair Jewels</h3>
-            <p class="product-desc">Hand wrapped copper jewels, adorned with healing crystals for your crown.</p>
-            <div class="product-footer"><span class="product-price">$11.11</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div>
-          </div>
-        </div>
-      </div>
+  <div class="product-card">
+    <div class="product-image"><img src="rings.jpg" style="width:100%; height:100%; object-fit:cover;" /></div>
+    <div class="product-info">
+      <p class="product-category">Jewelry</p>
+      <div class="product-footer"><button class="add-to-cart" onclick="showPage('shop')">Browse More</button></div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image"><img src="FOI.jpg" style="width:100%; height:100%; object-fit:cover;" /></div>
+    <div class="product-info">
+      <p class="product-category">Books</p>
+      <div class="product-footer"><button class="add-to-cart" onclick="showPage('shop')">Browse More</button></div>
+    </div>
+  </div>
     </div>
   </section>
 
@@ -238,6 +226,10 @@
         <button class="filter-btn" onclick="filterShop('books', this)">Books</button>
       </div>
 
+
+
+      <!--------------------
+      Amethyst Choker---------->
       <div class="product-grid" id="shopGrid">
         <div class="product-card" data-category="crystal-beaded">
         <div class="product-image"><img src="amchoke.PNG" style="width:100%; height:100%; object-fit:cover;" /></div>
@@ -259,24 +251,31 @@
     </div>
   </div>
 </div>
-        <div class="product-card" data-category="crystal-beaded">
+
+
+
+<!------------
+Joy of Ambition-------->
+        <div class="product-card" data-category="crystal">
         <div class="product-image"><img src="joy.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
         <div class="product-info">
-          <p class="product-category">Crystal & Assorted Beads</p>
+          <p class="product-category">100% Crystal</p>
           <h3 class="product-name">💫 The Joy of Ambition 💫 </h3>
           <p class="product-desc">
               Experience joy through disciplined ambition.
               <br><br>
               Tiger's eye is known to:
               <br> 
-              increase self-worth and self doubt, solar plexus activation, increase ambition and concentration,
+              increase self-worth, solar plexus activation, increase ambition and concentration,
               facilitate correct use of power, help with internal conflict, assist in accomplishing goals,
               unblock sacral & solar plexus chakras, activate the users internal masculine energy for their good 💛
               <br><br>
               Additional Crystals: <br>
               Pyrite 💎: money magic!, grounding, increase success 
               <br><br>
-              Black Onyx 🖤: blocks negativity, increases patience and determination <br><br>
+              Black Onyx 🖤: 
+              <br>
+              blocks negativity, increases patience and determination <br><br>
               “The Joy of Ambition” is also adorned with fresh water pearls, a tribute to the designers maternal grandmother, 
               as she was a lover of pearls, and is constantly watching over and guiding her lineage ✨ 
               <br><br>
@@ -288,6 +287,11 @@
     </div>
   </div>
 </div>
+
+
+
+<!-----------------
+Ring----------------->
         <div class="product-card" data-category="crystal">
         <div class="product-image"><img src="qring.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
         <div class="product-info">
@@ -311,6 +315,11 @@
     </div>
   </div>
 </div>
+
+
+
+<!----------------
+RICH BITCH----------->
         <div class="product-card" data-category="custom">
           <div class="product-image"><img src="rich.JPG" style="width:100%; height:100%; object-fit:cover;" /></div>
           <div class="product-info">
@@ -334,22 +343,164 @@
     </div>
   </div>
 </div>
-        <div class="product-card" data-category="jewelry">
-          <div class="product-image">🌸</div>
-          <div class="product-info"><p class="product-category">Jewelry</p><h3 class="product-name">Rose Quartz Ring</h3><p class="product-desc">Open your heart to love and compassion with this soft pink gem.</p><div class="product-footer"><span class="product-price">$36.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
-        </div>
-        <div class="product-card" data-category="books">
-          <div class="product-image">📗<span class="product-badge">Bestseller</span></div>
-          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">The Art of Inner Peace</h3><p class="product-desc">A guided journey to emotional freedom and stillness. 240 pages.</p><div class="product-footer"><span class="product-price">$22.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
-        </div>
-        <div class="product-card" data-category="books">
-          <div class="product-image">📙</div>
-          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Healing Through the Stars</h3><p class="product-desc">Astrology as a tool for self-discovery and emotional growth.</p><div class="product-footer"><span class="product-price">$19.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
-        </div>
-        <div class="product-card" data-category="books">
-          <div class="product-image">📕</div>
-          <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Root & Rise Journal</h3><p class="product-desc">A guided journal for grounding, reflection, and intentional living.</p><div class="product-footer"><span class="product-price">$24.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
-        </div>
+
+
+
+<!-----------------
+TIGER & ONYX------------->
+        <div class="product-card" data-category="crystal">
+          <div class="product-image"><img src="tiger.jpg" style="width:100%; height:100%; object-fit:cover;" /></div>
+        <div class="product-info">
+          <p class="product-category">100% Crystal</p>
+          <h3 class="product-name">Tiger's Eye & Onyx💫</h3>
+          <p class="product-desc">For the one who moves with purpose and protects their peace. 🖤
+            <br><br>
+           Tiger's Eye is known to:
+            <br>
+            increase self worth, increase ambition and concentration, assist in accomplishing goals, activate your internal masculine
+            energy, unblock sacral & solar plexus chakras
+            <br><br>
+            Black Onyx 🖤
+            <br>
+            blocks negativity, increases patience and determination, and sheilds your energy
+            <br><br>
+            Together these two are a power duo — ambition meets protection. Wear this when you need to show up fully and guard your energy at the same time ⭐️
+            <br><br>
+            This item can be custom created for you in a necklace, bracelet, or anklet.
+          </p>
+        <div class="product-footer">
+      <span class="product-price">$33.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-------------------
+TIGER & BEAD----------->
+
+    <div class="product-card" data-category="crystal-beaded">
+          <div class="product-image"><img src="tiger.jpg" style="width:100%; height:100%; object-fit:cover;" /></div>
+        <div class="product-info">
+          <p class="product-category">Crystal & Assorted Beads</p>
+          <h3 class="product-name">Tiger's Eye & Acrylic Beads 💫</h3>
+          <p class="product-desc">Ambition looks good on you. 💛
+            <br><br>
+            This bracelet combines the powerful energy of Tiger's Eye with the bold, sleek look of assorted beads — 
+            because your spiritual game and your style game can both be on point at the same time.
+            <br><br>
+           Tiger's Eye is known to:
+            <br>
+            increase self worth, increase ambition and concentration, assist in accomplishing goals, activate your internal masculine
+            energy, unblock sacral & solar plexus chakras
+            <br><br>
+            This item can be custom created for you in a necklace, bracelet, or anklet.
+          </p>
+        <div class="product-footer">
+      <span class="product-price">$22.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<!-------------
+PYRITE & ONYX--------->
+        <div class="product-card" data-category="crystal">
+  <div class="product-image"><img src="pyrite.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
+  <div class="product-info">
+    <p class="product-category">100% Crystal</p>
+    <h3 class="product-name">Pyrite & Black Onyx Bracelet ✨</h3>
+    <p class="product-desc">Money moves only! 💛 This bracelet was created with one intention — abundance.
+      <br><br>
+      Pyrite is known for:
+      <br>
+      money magic!, grounding, increase success, boosting confidence, attracting prosperity and good luck, shielding against negative energy
+      <br><br>
+      Stack it, wear it solo, or gift it to someone who's ready to level up.
+      <br><br>  
+      This item can be custom created for you in a necklace, bracelet, or anklet.</p>
+    <div class="product-footer">
+      <span class="product-price">$33.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<!--------------
+PYRITE & BEAD ------------>
+<div class="product-card" data-category="crystal-beaded">
+  <div class="product-image"><img src="pyrite.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
+  <div class="product-info">
+    <p class="product-category">Crystal & Assorted Beads</p>
+    <h3 class="product-name">Pyrite & Acrylic Beads Bracelet ✨</h3>
+    <p class="product-desc">Money and protection in one. 💛🖤 <br><br>
+      This bracelet pairs the abundance energy of Pyrite with bold assorted beads — a perfect combination 
+      for those who are building, hustling, and protecting their peace all at the same time.
+      <br><br>
+      Pyrite is known for:
+      <br>
+      money magic!, grounding, increase success, boosting confidence, attracting prosperity and good luck, shielding against negative energy
+      <br><br>  
+      This item can be custom created for you in a necklace, bracelet, or anklet.</p>
+    <div class="product-footer">
+      <span class="product-price">$22.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        <div class="product-card" data-category="crystal">
+  <div class="product-image"><img src="evilonyx.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
+  <div class="product-info">
+    <p class="product-category">100% Crystal</p>
+    <h3 class="product-name">Evil Eye Protection Choker — Black Onyx & Evil Eye 🧿</h3>
+    <p class="product-desc">Ward off what isn't yours to carry. 🖤
+      <br><br>
+      This choker was created with protection at its core. The Evil Eye guards against negative energy and 
+      ill intentions directed your way, while Black Onyx grounds and shields your spirit.
+    <br><br>
+    Black Onyx is known for:
+    <br>
+    blocking negativity, increasing patience and determination, grounding your energy, strengthening your aura
+    <br><br>
+    Pair it with intention. Wear it with confidence. You are protected ✨
+    <br><br>
+    This item can be custom created for you in a necklace, bracelet, or anklet.</p>
+    <div class="product-footer">
+      <span class="product-price">$33.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+        <div class="product-card" data-category="crystal-beaded">
+          <div class="product-image"><img src="evilassort.jpeg" style="width:100%; height:100%; object-fit:cover;" /></div>
+          <div class="product-info">
+            <p class="product-category">Crystal & Assorted Beads</p>
+              <h3 class="product-name">Evil Eye Protection Bracelet 🧿</h3>
+            <p class="product-desc">Style meets spiritual protection. 🖤
+              <br><br>
+                This bracelet gives bold, colorful, and intentional. Each piece is uniquely assembled with assorted beads, 
+                making every bracelet one of a kind — because you are too.
+                <br><br>
+                The Evil Eye keeps your energy guarded from negativity and bad intentions sent your way.
+                <br><br>    
+                Evil Eye is known for:
+                <br>
+                protecting against negative energy, deflecting ill intentions sent your way, bringing good luck and positive energy,
+                keeping your aura clear and guarded
+                <br><br>
+                Because looking good and being protected? That's the move ✨
+                <br><br>
+                This item can be custom created for you in a necklace, bracelet, or anklet.
+          <div class="product-footer">
+      <span class="product-price">$22.00</span>
+      <button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</div>
         <div class="product-card" data-category="books">
           <div class="product-image">📒</div>
           <div class="product-info"><p class="product-category">Books</p><h3 class="product-name">Sacred Feminine Rising</h3><p class="product-desc">Reclaim your power, your intuition, and your divine femininity.</p><div class="product-footer"><span class="product-price">$26.00</span><button class="add-to-cart" onclick="handleAddToCart(this)">Add to Cart</button></div></div>
