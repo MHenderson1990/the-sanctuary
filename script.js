@@ -41,6 +41,8 @@ const poems = {
     document.querySelectorAll('.product-card[data-category]').forEach(card => {
       card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
     });
+    const consultForm = document.getElementById('customConsultForm');
+    consultForm.style.display = (category === 'custom') ? 'block' : 'none';
   }
 
   function handleAddToCart(btn) {
@@ -75,5 +77,10 @@ const poems = {
       observer.observe(el);
     });
   }
+
+  function handleConsultation(event) {
+  event.preventDefault();
+  event.target.innerHTML = '<div style="text-align:center; padding:2rem;"><p style="font-size:2rem; margin-bottom:1rem;">✨</p><h3 style="font-family:\'Playfair Display\',serif; margin-bottom:0.5rem;">Request Received!</h3><p style="color:var(--text-secondary);">Coco will reach out shortly to confirm your consultation time.</p></div>';
+}
 
   initFadeIns();
