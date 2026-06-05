@@ -60,12 +60,10 @@ const poems = {
   }
 
   function handleContact(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = 'linear-gradient(135deg, var(--dark-sage), var(--forest))';
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; e.target.reset(); }, 3000);
-  }
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = '✓ Message Sent!';
+  btn.disabled = true;
+}
 
   function initFadeIns() {
     const observer = new IntersectionObserver(entries => {
@@ -78,9 +76,10 @@ const poems = {
     });
   }
 
-  function handleConsultation(event) {
-  event.preventDefault();
-  event.target.innerHTML = '<div style="text-align:center; padding:2rem;"><p style="font-size:2rem; margin-bottom:1rem;">✨</p><h3 style="font-family:\'Playfair Display\',serif; margin-bottom:0.5rem;">Request Received!</h3><p style="color:var(--text-secondary);">Coco will reach out shortly to confirm your consultation time.</p></div>';
+function handleConsultation(event) {
+  const btn = event.target.querySelector('button[type="submit"]');
+  btn.textContent = '✓ Request Sent!';
+  btn.disabled = true;
 }
 
   initFadeIns();
