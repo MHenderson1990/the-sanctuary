@@ -59,11 +59,10 @@ const poems = {
   }
 
   function handleSmsSignup(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button');
-    btn.textContent = '✓ You\'re in!';
-    setTimeout(() => { btn.textContent = 'Sign Me Up ✨'; e.target.reset(); }, 3000);
-  }
+  const btn = e.target.querySelector('button');
+  btn.textContent = '✓ You\'re in!';
+  btn.disabled = true;
+}
 
   function handleContact(e) {
   const btn = e.target.querySelector('button[type="submit"]');

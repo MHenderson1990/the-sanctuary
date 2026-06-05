@@ -201,8 +201,10 @@
     <div class="section-eyebrow" style="justify-content:center; margin-bottom:1rem;">Daily Inspiration</div>
     <h2>Motivation Sent Straight to Your Phone</h2>
     <p>Sign up for Coco's daily inspirational texts — your morning reminder to show up for yourself.</p>
-    <form class="sms-form" onsubmit="handleSmsSignup(event)">
-      <input type="tel" placeholder="Enter your phone number" required />
+    <form class="sms-form" action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleSmsSignup(event)">
+      <input type="text" name="first_name" placeholder="First name" required />
+      <input type="tel" name="phone" placeholder="Phone number" required />
+      <input type="email" name="email" placeholder="Email address" required />
       <button type="submit">Sign Me Up ✨</button>
     </form>
   </div>
