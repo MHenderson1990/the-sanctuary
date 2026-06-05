@@ -32,7 +32,7 @@ const poems = {
   function closePoemModal(e) { if (e.target === document.getElementById('poemModal')) document.getElementById('poemModal').classList.remove('open'); }
   function closePoemModalDirect() { document.getElementById('poemModal').classList.remove('open'); }
 
-  function openBooking() { document.getElementById('bookingModal').classList.add('open'); }
+  function openBooking(url) { window.open(url, '_blank'); }
   function closeBookingModal(e) { if (e.target === document.getElementById('bookingModal')) document.getElementById('bookingModal').classList.remove('open'); }
 
   function filterShop(category, btn) {
