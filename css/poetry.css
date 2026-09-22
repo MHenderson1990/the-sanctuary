@@ -1,0 +1,86 @@
+/* ════════════════════════════════════
+   POETRY
+════════════════════════════════════ */
+.poetry-section { background: var(--bg-deep); }
+
+.poetry-section .section-title { color: var(--text-primary); }
+.poetry-section .section-eyebrow { color: var(--mauve); }
+.poetry-section .section-eyebrow::before,
+.poetry-section .section-eyebrow::after { background: var(--mauve); }
+.poetry-section .section-subtitle { color: var(--text-secondary); }
+
+.poetry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.poem-card {
+  background: rgba(255,255,255,0.03);
+  border: 0.5px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.poem-card:hover {
+  background: rgba(180,143,212,0.06);
+  border-color: rgba(193,123,142,0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.poem-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+
+.poem-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.poem-preview {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.poem-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+
+.poem-tag {
+  background: rgba(180,143,212,0.08);
+  border: 1px solid var(--border);
+  color: var(--lavender);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.poem-actions { display: flex; gap: 0.75rem; }
+
+.poem-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.poem-btn-read { background: rgba(255,255,255,0.07); color: var(--text-secondary); border: 0.5px solid var(--border); }
+.poem-btn-read:hover { background: rgba(255,255,255,0.12); color: var(--white); }
+.poem-btn-listen { background: var(--mauve); color: var(--white); }
+.poem-btn-listen:hover { background: var(--mauve-dark); transform: scale(1.05); }

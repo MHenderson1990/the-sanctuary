@@ -1,0 +1,51 @@
+/* ════════════════════════════════════
+   BASE — theme variables, reset, page switching
+════════════════════════════════════ */
+:root {
+  --bg-primary:    #0D0B1A;
+  --bg-secondary:  #110F22;
+  --bg-card:       #1A1630;
+  --bg-deep:       #080613;
+  --text-primary:  #EDE8F5;
+  --text-secondary:rgba(237,232,245,0.65);
+  --text-muted:    rgba(237,232,245,0.4);
+  --mauve:         #C17B8E;
+  --mauve-dark:    #A85E72;
+  --lavender:      #B48FD4;
+  --lavender-dim:  rgba(180,143,212,0.15);
+  --border:        rgba(180,143,212,0.15);
+  --border-soft:   rgba(180,143,212,0.08);
+  --white:         #FFFFFF;
+  --sage:          #7D9B76;
+  --sage-light:    #A8C4A2;
+  /* legacy aliases so old inline styles still resolve */
+  --cream:         #0D0B1A;
+  --light-cream:   #110F22;
+  --parchment:     #1A1630;
+  --nude:          #C17B8E;
+  --tan:           rgba(180,143,212,0.4);
+  --brown:         rgba(237,232,245,0.6);
+  --dark-brown:    #EDE8F5;
+  --espresso:      #080613;
+  --light-text:    rgba(237,232,245,0.6);
+  --text:          #EDE8F5;
+  --gold:          #C17B8E;
+  --gold-light:    rgba(180,143,212,0.2);
+  --dark-sage:     #A85E72;
+  --forest:        #1A1630;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Page switching (showPage toggles .active) */
+.page { display: none; }
+.page.active { display: block; }
