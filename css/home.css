@@ -68,7 +68,7 @@
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-size: 2.5rem;
   color: var(--text-primary);
   line-height: 1.15;
   margin-bottom: 1.8rem;
@@ -563,3 +563,22 @@
   z-index: 1;
 }
 
+/* ════════════════════════════════════
+   HOME — moved from inline styles
+════════════════════════════════════ */
+.hero-logo {
+  display: block;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.featured-section { background: var(--bg-primary); }
+
+.poetry-teaser .section-eyebrow {
+  justify-content: center;
+  color: var(--sage-light);
+  margin-bottom: 1rem;
+}
+.poetry-teaser .btn-primary { position: relative; z-index: 1; }
