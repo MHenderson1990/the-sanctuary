@@ -4,7 +4,7 @@
 .poetry-section { background: var(--bg-deep); }
 
 .poetry-section .section-title { color: var(--text-primary); }
-.poetry-section .section-eyebrow { color: var(--mauve); }
+.poetry-section .section-eyebrow { color: var(--sage-light); --sage: var(--sage-light); }
 .poetry-section .section-eyebrow::before,
 .poetry-section .section-eyebrow::after { background: var(--mauve); }
 .poetry-section .section-subtitle { color: var(--text-secondary); }

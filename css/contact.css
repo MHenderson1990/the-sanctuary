@@ -86,3 +86,22 @@
   color: var(--text-primary);
   margin-bottom: 2rem;
 }
+
+/* ════════════════════════════════════
+   CONTACT — moved from inline styles
+════════════════════════════════════ */
+.contact-section { background: var(--bg-secondary); }
+
+.contact-info-card .contact-intro { margin-top: 0.75rem; }
+
+.contact-details { margin-top: 2rem; }
+
+.contact-info-card .contact-follow-label {
+  font-size: 0.68rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--sage-light);
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
