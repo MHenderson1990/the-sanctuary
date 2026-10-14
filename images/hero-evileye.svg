@@ -1,0 +1,12 @@
+<!-- 🧿 Evil eye — top right corner -->
+    <svg class="hero-evileye" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="60" cy="60" rx="55" ry="38" fill="rgba(237,232,245,0.06)" stroke="rgba(237,232,245,0.18)" stroke-width="1.5"/>
+      <circle cx="60" cy="60" r="26" fill="#1A1060" stroke="rgba(180,143,212,0.35)" stroke-width="1"/>
+      <circle cx="60" cy="60" r="19" fill="#2A1A8A" opacity="0.9"/>
+      <circle cx="60" cy="60" r="13" fill="#3D2BC4" opacity="0.85"/>
+      <circle cx="60" cy="60" r="7"  fill="#080613"/>
+      <circle cx="54" cy="54" r="3"  fill="rgba(255,255,255,0.55)"/>
+      <path d="M18 42 Q60 15 102 42" stroke="rgba(180,143,212,0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M18 78 Q60 105 102 78" stroke="rgba(180,143,212,0.5)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="60" cy="60" rx="55" ry="38" fill="none" stroke="rgba(180,143,212,0.12)" stroke-width="8"/>
+    </svg>
