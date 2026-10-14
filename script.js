@@ -41,15 +41,6 @@ const poems = {
 }
   function closeBookingModal(e) { if (e.target === document.getElementById('bookingModal')) document.getElementById('bookingModal').classList.remove('open'); }
 
-  function filterShop(category, btn) {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.product-card[data-category]').forEach(card => {
-      card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
-    });
-    const consultForm = document.getElementById('customConsultForm');
-    consultForm.style.display = (category === 'custom') ? 'block' : 'none';
-  }
 
   function handleAddToCart(btn) {
     const original = btn.textContent;
