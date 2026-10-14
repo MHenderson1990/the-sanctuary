@@ -28,6 +28,7 @@
   .feature-block:last-child { border-bottom: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  .product-detail { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 @media (max-width: 600px) {

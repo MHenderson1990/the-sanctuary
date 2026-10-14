@@ -8,6 +8,7 @@ const poems = {
   };
 
   function showPage(page) {
+    if (page !== 'product' && location.hash) history.replaceState(null, '', location.pathname + location.search);
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + page).classList.add('active');
     document.querySelectorAll('.nav-links a[data-page]').forEach(a => a.classList.remove('active'));

@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/blog.css">
   <link rel="stylesheet" href="css/poetry.css">
@@ -661,6 +662,28 @@ PYRITE & BEAD ------------>
   </section>
 </div><!-- end shop -->
 
+
+<!-- ════════════════════════════════
+     PRODUCT DETAIL PAGE (filled in by js/product.js)
+════════════════════════════════ -->
+<div id="page-product" class="page">
+  <section class="section section--compact">
+    <div class="section-inner">
+      <button class="product-back" onclick="showPage('shop')">← Back to Shop</button>
+      <div class="product-detail">
+        <div class="product-detail-image"><img id="productImage" src="" alt="" /></div>
+        <div class="product-detail-info">
+          <p class="product-category" id="productCategory"></p>
+          <h2 class="product-detail-name" id="productName"></h2>
+          <p class="product-detail-price" id="productPrice"></p>
+          <div class="product-detail-desc" id="productDesc"></div>
+          <button class="btn-primary" id="productBuy">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <!-- ════════════════════════════════
      SERVICES PAGE
 ════════════════════════════════ -->
@@ -1029,5 +1052,6 @@ PYRITE & BEAD ------------>
 <script src="js/products.js"></script>
 <script src="js/shop.js"></script>
 <script src="script.js"></script>
+<script src="js/product.js"></script>
 </body>
 </html>
