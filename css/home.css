@@ -9,46 +9,14 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 0%, rgba(139,94,69,0.16) 0%, transparent 70%),
+  background: url('../images/hero-leaves.svg') center / cover no-repeat,
+              radial-gradient(ellipse at 50% 0%, rgba(139,94,69,0.16) 0%, transparent 70%),
               radial-gradient(ellipse at 85% 85%, rgba(94,115,82,0.14) 0%, transparent 60%),
               var(--bg-primary);
 }
 
 /* Hide old botanical blobs */
 .hero-blob, .hero-botanical { display: none; }
-
-/* Stars layer */
-.hero-stars {
-  display: none;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Evil eye — top right */
-.hero-evileye {
-  position: absolute;
-  top: -30px; right: -30px;
-  width: 300px; height: 300px;
-  opacity: 0.1;
-  filter: invert(1) sepia(1) hue-rotate(-20deg);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Birth chart — bottom left */
-.hero-birthchart {
-  position: absolute;
-  bottom: -40px; left: -40px;
-  width: 290px; height: 290px;
-  opacity: 0.07;
-  filter: invert(1) sepia(1) hue-rotate(-20deg);
-  pointer-events: none;
-  z-index: 0;
-}
 
 .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 1.5rem; }
 
