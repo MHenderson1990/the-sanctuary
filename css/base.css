@@ -2,37 +2,39 @@
    BASE — theme variables, reset, page switching
 ════════════════════════════════════ */
 :root {
-  --bg-primary:    #0D0B1A;
-  --bg-secondary:  #110F22;
-  --bg-card:       #1A1630;
-  --bg-deep:       #080613;
-  --text-primary:  #EDE8F5;
-  --text-secondary:rgba(237,232,245,0.65);
-  --text-muted:    rgba(237,232,245,0.4);
-  --mauve:         #C17B8E;
-  --mauve-dark:    #A85E72;
-  --lavender:      #B48FD4;
-  --lavender-dim:  rgba(180,143,212,0.15);
-  --border:        rgba(180,143,212,0.15);
-  --border-soft:   rgba(180,143,212,0.08);
+  /* ── Earthy palette (House of Love) ── */
+  --bg-primary:    #F2E0D8;  /* blush nude — page background */
+  --bg-secondary:  #EAD3C7;  /* deeper nude — alternate sections */
+  --bg-card:       #FAF1EC;  /* light cream — cards, form fields */
+  --bg-deep:       #E6CDBF;  /* footer, poetry page */
+  --text-primary:  #3B2A22;  /* espresso */
+  --text-secondary:#6B5348;  /* warm brown */
+  --text-muted:    #8C7468;
+  /* "mauve" and "lavender" keep their old names so existing CSS still works */
+  --mauve:         #8B5E45;  /* cinnamon brown — buttons, accents */
+  --mauve-dark:    #6E4733;
+  --lavender:      #4F6345;  /* sage green — italic highlights */
+  --lavender-dim:  rgba(94,115,82,0.12);
+  --border:        rgba(110,71,51,0.18);
+  --border-soft:   rgba(110,71,51,0.10);
   --white:         #FFFFFF;
-  --sage:          #7D9B76;
-  --sage-light:    #A8C4A2;
+  --sage:          #5E7352;
+  --sage-light:    #5E7352;
   /* legacy aliases so old inline styles still resolve */
-  --cream:         #0D0B1A;
-  --light-cream:   #110F22;
-  --parchment:     #1A1630;
-  --nude:          #C17B8E;
-  --tan:           rgba(180,143,212,0.4);
-  --brown:         rgba(237,232,245,0.6);
-  --dark-brown:    #EDE8F5;
-  --espresso:      #080613;
-  --light-text:    rgba(237,232,245,0.6);
-  --text:          #EDE8F5;
-  --gold:          #C17B8E;
-  --gold-light:    rgba(180,143,212,0.2);
-  --dark-sage:     #A85E72;
-  --forest:        #1A1630;
+  --cream:         #F2E0D8;
+  --light-cream:   #EAD3C7;
+  --parchment:     #FAF1EC;
+  --nude:          #8B5E45;
+  --tan:           rgba(110,71,51,0.3);
+  --brown:         #6B5348;
+  --dark-brown:    #3B2A22;
+  --espresso:      #3B2A22;
+  --light-text:    #6B5348;
+  --text:          #3B2A22;
+  --gold:          #8B5E45;
+  --gold-light:    rgba(139,94,69,0.2);
+  --dark-sage:     #6E4733;
+  --forest:        #FAF1EC;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }

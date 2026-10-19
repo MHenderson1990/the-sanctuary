@@ -16,7 +16,7 @@
   border: 0.5px solid var(--border);
 }
 
-.blog-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(0,0,0,0.35); border-color: rgba(180,143,212,0.3); }
+.blog-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(59,42,34,0.35); border-color: rgba(94,115,82,0.3); }
 
 .blog-image {
   height: 200px;
@@ -28,7 +28,7 @@
   overflow: hidden;
 }
 
-.blog-image-1 { background: linear-gradient(135deg, #2D1F45 0%, #1A0F2E 100%); }
+.blog-image-1 { background: linear-gradient(135deg, #E3C9BB 0%, #EAD3C7 100%); }
 .blog-image-2 { background: linear-gradient(135deg, #3D1F3A 0%, #2D0F28 100%); }
 .blog-image-3 { background: linear-gradient(135deg, #1F2D45 0%, #0F1E2E 100%); }
 .blog-image-4 { background: linear-gradient(135deg, #1F3D2D 0%, #0F2D1E 100%); }

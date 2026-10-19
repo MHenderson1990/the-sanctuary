@@ -30,12 +30,12 @@
   transition: opacity 0.3s;
 }
 
-.service-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(0,0,0,0.3); border-color: rgba(180,143,212,0.3); }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(59,42,34,0.3); border-color: rgba(94,115,82,0.3); }
 .service-card:hover::before { opacity: 1; }
 
 .service-icon-wrap {
   width: 80px; height: 80px;
-  background: rgba(180,143,212,0.1);
+  background: rgba(94,115,82,0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -66,8 +66,8 @@
   display: inline-block;
   font-size: 0.72rem;
   color: var(--white);
-  background: rgba(193,123,142,0.25);
-  border: 1px solid rgba(193,123,142,0.3);
+  background: rgba(139,94,69,0.25);
+  border: 1px solid rgba(139,94,69,0.3);
   padding: 0.25rem 0.9rem;
   border-radius: 20px;
   letter-spacing: 1px;
@@ -92,4 +92,4 @@
   text-transform: uppercase;
 }
 
-.book-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(193,123,142,0.4); }
+.book-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(139,94,69,0.4); }
