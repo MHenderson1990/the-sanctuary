@@ -133,17 +133,21 @@
     </div>
   </section>
 
-  <!-- SMS Signup -->
-  <div class="sms-section">
-    <div class="section-eyebrow" style="justify-content:center; margin-bottom:1rem;">Daily Inspiration</div>
-    <h2>Motivation Sent Straight to Your Phone</h2>
-    <p>Sign up for Coco's daily inspirational texts — your morning reminder to show up for yourself.</p>
-    <form class="sms-form" action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleSmsSignup(event)">
-      <input type="text" name="first_name" placeholder="First name" required />
-      <input type="tel" name="phone" placeholder="Phone number" required />
-      <input type="email" name="email" placeholder="Email address" required />
-      <button type="submit">Sign Me Up ✨</button>
-    </form>
+  <!-- Love G.E.M.S. app teaser -->
+  <div class="app-section" id="love-gems">
+    <div class="app-inner">
+      <div class="app-content">
+        <div class="section-eyebrow">Coming Soon</div>
+        <h2>Love <em>G.E.M.S.</em></h2>
+        <p class="app-tagline">Godly Energy Motivating Society</p>
+        <p>Coco's daily affirmations app — a fresh message every morning, a private journal to reflect in, and your favorite words right on your home screen.</p>
+        <div class="app-badges">
+          <span class="app-badge"><i class="fab fa-apple"></i> App Store · Coming Soon</span>
+          <span class="app-badge"><i class="fab fa-google-play"></i> Google Play · Coming Soon</span>
+        </div>
+      </div>
+      <img src="images/App-Icon.png" class="app-icon" alt="Love G.E.M.S. app icon" />
+    </div>
   </div>
 
   <!-- BIO SECTION -->
@@ -570,7 +574,7 @@
             </div>
             <div class="contact-detail">
               <div class="contact-detail-icon">📱</div>
-              Daily texts — sign up on the Home page
+                Love G.E.M.S. app — coming soon
             </div>
             <div class="contact-detail">
               <div class="contact-detail-icon">📍</div>
@@ -665,7 +669,7 @@
           <li><a onclick="showPage('contact')">Contact</a></li>
           <li><a href="https://instagram.com/cocolovethewriter" target="_blank">Instagram</a></li>
           <li><a href="https://tiktok.com/@cocodapoet" target="_blank">TikTok</a></li>
-          <li><a onclick="showPage('home')">Daily Text Signup</a></li>
+          <li><a onclick="showPage('home'); setTimeout(() => document.getElementById('love-gems').scrollIntoView({ behavior: 'smooth' }), 300)">Love G.E.M.S. App</a></li>
         </ul>
       </div>
     </div>

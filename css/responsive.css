@@ -29,6 +29,10 @@
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .product-detail { grid-template-columns: 1fr; gap: 2rem; }
+  .app-inner { flex-direction: column-reverse; gap: 2rem; text-align: center; }
+  .app-section .section-eyebrow, .app-badges { justify-content: center; }
+  .app-section p { margin-left: auto; margin-right: auto; }
+  .app-icon { width: 130px; height: 130px; border-radius: 30px; }
 }
 
 @media (max-width: 600px) {

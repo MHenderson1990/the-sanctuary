@@ -50,11 +50,6 @@ const poems = {
     setTimeout(() => { btn.textContent = original; btn.style.background = ''; }, 2000);
   }
 
-  function handleSmsSignup(e) {
-  const btn = e.target.querySelector('button');
-  btn.textContent = '✓ You\'re in!';
-  btn.disabled = true;
-}
 
   function handleContact(e) {
   const btn = e.target.querySelector('button[type="submit"]');
