@@ -18,7 +18,7 @@
 /* Hide old botanical blobs */
 .hero-blob, .hero-botanical { display: none; }
 
-.hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 1.5rem; }
+.hero-content { position: relative; z-index: 2; width: 100%; max-width: 800px; padding: 0 1.5rem; }
 
 .hero-badge {
   display: inline-flex;
@@ -543,10 +543,10 @@
 ════════════════════════════════════ */
 .hero-logo {
   display: block;
-  width: 420px;
-  max-width: 100%;
+  width: min(1000px, calc(100vw - 3rem));
   height: auto;
-  margin: 0 auto 1rem;
+  margin: 0 0 1rem 50%;
+  transform: translateX(-50%);
 }
 
 .featured-section { background: var(--bg-primary); }
