@@ -32,4 +32,12 @@ function filterShop(category, btn) {
   consultForm.style.display = (category === 'custom') ? 'block' : 'none';
 }
 
+// Custom Orders: switch between the consultation form and the no-consultation order form
+function showCustomForm(which, btn) {
+  document.querySelectorAll('.custom-toggle-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('customFormConsult').hidden = (which !== 'consult');
+  document.getElementById('customFormOrder').hidden = (which !== 'order');
+}
+
 renderShopGrid();

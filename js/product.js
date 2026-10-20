@@ -30,6 +30,7 @@ function openProduct(id) {
 function inquireCustom() {
   showPage('shop');
   filterShop('custom', document.querySelector('.filter-btn[onclick*=custom]'));
+  showCustomForm('consult', document.querySelector('.custom-toggle-btn'));
   setTimeout(() => {
     document.getElementById('customConsultForm').scrollIntoView({ behavior: 'smooth' });
   }, 300);

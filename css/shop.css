@@ -59,3 +59,41 @@
    SHOP — product thumbnails (cards are links)
 ════════════════════════════════════ */
 .product-thumb { text-decoration: none; color: inherit; }
+
+/* Consultation calendar button — centered */
+.consult-calendar { text-align: center; margin: 1.5rem 0 2rem; }
+.consult-calendar .consult-calendar-btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+/* Custom Orders form toggle */
+.custom-toggle {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.custom-toggle-btn {
+  padding: 0.65rem 1.4rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.custom-toggle-btn.active,
+.custom-toggle-btn:hover {
+  background: var(--lavender);
+  border-color: var(--lavender);
+  color: var(--white);
+}

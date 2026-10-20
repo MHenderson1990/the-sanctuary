@@ -244,79 +244,117 @@
       <div id="customConsultForm" style="display:none; margin-top:3rem;">
         <div class="consult-card">
           <div class="section-eyebrow">Custom Orders</div>
-          <h3 class="consult-title">Book a <em>Consultation</em></h3>
-          <p class="consult-intro">If you need more information on which crystals 
-            would benefit you, please schedule a consultation. In the consultation, we’ll discuss what energy you’re wanting to bring into your life and the specifics of your custom order. 
-            Final pricing of custom piece will be provided during the consultation. This consultation is free/donation based. Donations can be made to $cocolovethewriter  </p>
+          <h3 class="consult-title">Your <em>Custom Piece</em></h3>
 
-          <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleConsultation(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label>First Name</label>
-                <input type="text" name="first_name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" name="last_name" placeholder="Your last name" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" name="email" placeholder="your@email.com" required />
-              </div>
-              <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" name="phone" placeholder="(000) 000-0000" />
-              </div>
-            </div>
+          <div class="custom-toggle">
+            <button type="button" class="custom-toggle-btn active" onclick="showCustomForm('consult', this)">Book a Consultation</button>
+            <button type="button" class="custom-toggle-btn" onclick="showCustomForm('order', this)">Order Without a Consultation</button>
+          </div>
 
-            <div class="form-group">
-              <label>What type of piece are you interested in?</label>
-              <div class="checkbox-group">
-                <label class="checkbox-option">
-                  <input type="checkbox" name="piece_type" value="necklace" /> Necklace
-                </label>
-                <label class="checkbox-option">
-                  <input type="checkbox" name="piece_type" value="bracelet" /> Bracelet
-                </label>
-                <label class="checkbox-option">
-                  <input type="checkbox" name="piece_type" value="anklet" /> Anklet
-                </label>
-                <label class="checkbox-option">
-                  <input type="checkbox" name="piece_type" value="ring" /> Ring
-                </label>
+          <!-- ── Form 1: Consultation ── -->
+          <div id="customFormConsult" class="custom-form-panel">
+            <p class="consult-intro">If you need more information on which crystals 
+              would benefit you, please schedule a consultation. In the consultation, we’ll discuss what energy you’re wanting to bring into your life and the specifics of your custom order. 
+              Final pricing of custom piece will be provided during the consultation. This consultation is free/donation based. Donations can be made to $cocolovethewriter  </p>
+
+            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleConsultation(event)">
+              <input type="hidden" name="_subject" value="Custom Order — Consultation Request" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="first_name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" name="last_name" placeholder="Your last name" />
+                </div>
               </div>
-            </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" name="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="tel" name="phone" placeholder="(000) 000-0000" />
+                </div>
+              </div>
 
-            <div class="form-group">
-              <label>Any crystals you're drawn to or intentions you want to set?</label>
-              <textarea name="crystals" placeholder="e.g. I love amethyst and want something for protection and calm..." class="textarea-md"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label>Anything else you want Coco to know?</label>
-              <textarea name="additional_info" placeholder="Share anything that feels important — a special occasion, a person you're creating for, a feeling you want to carry..." class="textarea-sm"></textarea>
-            </div>
-
-            <div class="form-row">
               <div class="form-group">
-                <label>Preferred Consultation Date</label>
-                <input type="date" name="preferred_date" />
+                <label>What type of piece are you interested in?</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="necklace" /> Necklace</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="bracelet" /> Bracelet</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="anklet" /> Anklet</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="ring" /> Ring</label>
+                </div>
               </div>
-              <div class="form-group">
-                <label>Preferred Time</label>
-                <select name="preferred_time">
-                  <option value="">Select a time...</option>
-                  <option>Morning (9am – 12pm)</option>
-                  <option>Afternoon (12pm – 4pm)</option>
-                  <option>Evening (4pm – 7pm)</option>
-                </select>
-              </div>
-            </div>
 
-            <button type="submit" class="btn-primary consult-submit">Request My Consultation ✨</button>
-          </form>
+              <div class="form-group">
+                <label>Anything else you want Coco to know?</label>
+                <textarea name="additional_info" placeholder="Share anything that feels important — a special occasion, a person you're creating for, a feeling you want to carry..." class="textarea-sm"></textarea>
+              </div>
+
+              <div class="form-group consult-calendar">
+                <label>Pick your consultation time</label>
+                <!-- TODO: replace # with Coco's calendar booking link, and add target="_blank" rel="noopener" -->
+                <a href="#" class="btn-outline consult-calendar-btn">📅 Choose a Time on Coco's Calendar</a>
+              </div>
+
+              <button type="submit" class="btn-primary consult-submit">Request My Consultation ✨</button>
+            </form>
+          </div>
+
+          <!-- ── Form 2: Order without consultation ── -->
+          <div id="customFormOrder" class="custom-form-panel" hidden>
+            <p class="consult-intro">Already know what you're looking for? Tell Coco about your piece below. She'll review your request and email you a price quote before anything is made — no consultation needed.</p>
+
+            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleConsultation(event)">
+              <input type="hidden" name="_subject" value="Custom Order — No Consultation" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="first_name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" name="last_name" placeholder="Your last name" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" name="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="tel" name="phone" placeholder="(000) 000-0000" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>What type of piece would you like?</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="necklace" /> Necklace</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="bracelet" /> Bracelet</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="anklet" /> Anklet</label>
+                  <label class="checkbox-option"><input type="checkbox" name="piece_type" value="ring" /> Ring</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Crystals, chakras, or energy you want</label>
+                <textarea name="crystals" placeholder="e.g. Amethyst for calm, rose quartz for self-love, heart chakra..." class="textarea-md"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Anything else you want Coco to know?</label>
+                <textarea name="additional_info" placeholder="Share anything that feels important — a special occasion, a person you're creating for, a feeling you want to carry..." class="textarea-sm"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary consult-submit">Submit My Order Request ✨</button>
+            </form>
+          </div>
         </div>
       </div>
       
