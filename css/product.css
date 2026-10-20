@@ -60,3 +60,13 @@
 }
 
 .product-detail-info .btn-primary { width: 100%; max-width: 320px; }
+
+/* ════════════════════════════════════
+   PRODUCT PAGE FONTS — Tinos (serif) + Arimo (sans)
+════════════════════════════════════ */
+#page-product,
+#page-product .product-back,
+#page-product .btn-primary { font-family: 'Arimo', sans-serif; }
+
+#page-product .product-detail-name,
+#page-product .product-detail-price { font-family: 'Tinos', serif; }
