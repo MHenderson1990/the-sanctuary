@@ -445,70 +445,17 @@
     <div class="section-inner">
       <div class="section-eyebrow">Coco's Words</div>
       <h2 class="section-title">Poetry</h2>
-      <p class="section-subtitle">Words born from lived experience. Read them. Feel them. Hear Coco bring them to life.</p>
+      <p class="section-subtitle">Words born from lived experience. Press play, close your eyes, and let Coco bring them to life.</p>
 
-      <div class="poetry-grid">
-        <div class="coming-soon coming-soon--subtle">
+      <!-- Shown only while js/poems.js has no poems -->
+      <div class="coming-soon coming-soon--subtle" id="poetryComingSoon">
         <p class="coming-soon-icon">🌙</p>
         <h3 class="coming-soon-title">Poetry <em>Coming Soon</em></h3>
         <p class="coming-soon-text">Coco's words are on their way. Check back soon for original poetry, spoken word, and audio recordings.</p>
       </div>
-      <div class="poetry-grid" style="display:none;">
-        <div class="poem-card">
-          <div class="poem-icon">🌿</div><h3>Rooted</h3>
-          <p class="poem-preview">"Even trees that bend in the storm / know exactly where home is..."</p>
-          <div class="poem-tags"><span class="poem-tag">Healing</span><span class="poem-tag">Strength</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('rooted')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('rooted', true)">🎧 Listen</button>
-          </div>
-        </div>
-        <div class="poem-card">
-          <div class="poem-icon">🌙</div><h3>Quiet Moon</h3>
-          <p class="poem-preview">"She doesn't need to be seen to be powerful / the moon has always known this..."</p>
-          <div class="poem-tags"><span class="poem-tag">Feminine</span><span class="poem-tag">Stillness</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('quietmoon')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('quietmoon', true)">🎧 Listen</button>
-          </div>
-        </div>
-        <div class="poem-card">
-          <div class="poem-icon">🔥</div><h3>Rising</h3>
-          <p class="poem-preview">"I did not survive the fire to be afraid of sparks / I am the light now..."</p>
-          <div class="poem-tags"><span class="poem-tag">Growth</span><span class="poem-tag">Resilience</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('rising')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('rising', true)">🎧 Listen</button>
-          </div>
-        </div>
-        <div class="poem-card">
-          <div class="poem-icon">💧</div><h3>Let It Flow</h3>
-          <p class="poem-preview">"Grief is just love with nowhere left to go / so I let it pour..."</p>
-          <div class="poem-tags"><span class="poem-tag">Grief</span><span class="poem-tag">Healing</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('flow')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('flow', true)">🎧 Listen</button>
-          </div>
-        </div>
-        <div class="poem-card">
-          <div class="poem-icon">🌸</div><h3>Soft & Strong</h3>
-          <p class="poem-preview">"Softness is not a weakness / it is the bravest armor I have ever worn..."</p>
-          <div class="poem-tags"><span class="poem-tag">Self-love</span><span class="poem-tag">Empowerment</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('soft')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('soft', true)">🎧 Listen</button>
-          </div>
-        </div>
-        <div class="poem-card">
-          <div class="poem-icon">⭐</div><h3>Written in Stars</h3>
-          <p class="poem-preview">"Before you were a name / you were a constellation / the sky still remembers you..."</p>
-          <div class="poem-tags"><span class="poem-tag">Spiritual</span><span class="poem-tag">Purpose</span></div>
-          <div class="poem-actions">
-            <button class="poem-btn poem-btn-read" onclick="openPoem('stars')">📖 Read</button>
-            <button class="poem-btn poem-btn-listen" onclick="openPoem('stars', true)">🎧 Listen</button>
-          </div>
-        </div>
-      </div>
+
+      <!-- Poem list: one row per poem, filled in by js/poetry.js from js/poems.js -->
+      <div class="poem-list" id="poemList"></div>
     </div>
   </section>
 </div><!-- end poetry -->
@@ -718,21 +665,6 @@
   </div>
 </footer>
 
-<!-- ════════════════════════════════
-     POEM MODAL
-════════════════════════════════ -->
-<div class="modal-overlay" id="poemModal" onclick="closePoemModal(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closePoemModalDirect()">✕</button>
-    <p class="modal-tag" id="modalTag">Poetry</p>
-    <h2 id="modalTitle"></h2>
-    <div class="poem-text" id="modalText"></div>
-    <div class="audio-player">
-      <h4>🎧 Listen to Coco Read This Poem</h4>
-      <div id="audioContent"></div>
-    </div>
-  </div>
-</div>
 
 <!-- ════════════════════════════════
      BOOKING MODAL
@@ -753,5 +685,7 @@
 <script src="js/shop.js"></script>
 <script src="script.js"></script>
 <script src="js/product.js"></script>
+<script src="js/poems.js"></script>
+<script src="js/poetry.js"></script>
 </body>
 </html>

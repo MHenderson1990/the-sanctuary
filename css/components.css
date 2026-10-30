@@ -565,34 +565,6 @@ footer::before {
   margin-bottom: 1.75rem;
 }
 
-.poem-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
-  line-height: 2.1;
-  color: var(--text-secondary);
-  white-space: pre-line;
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-
-.audio-player {
-  background: var(--bg-card);
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
-  border: 0.5px solid var(--border);
-}
-
-.audio-player h4 {
-  font-size: 0.68rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--mauve);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.audio-placeholder { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; color: var(--text-muted); font-style: italic; }
-
 /* ════════════════════════════════════
    BOOKING PLACEHOLDER
 ════════════════════════════════════ */
