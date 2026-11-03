@@ -7,13 +7,10 @@
 ════════════════════════════════════ */
 const POEMS = [
   {
-    id: 'test',
-    title: 'Test Poem',
-    icon: '🌙',
-    tags: ['Healing', 'Strength'],
-    text: `Line one
-Line two
-Line three`,
-    audio: 'audio/test.mp3'
+    id: 'time-the-illusion',
+    title: 'Time, the Illusion',
+    icon: '🕰️',
+    tags: ['Creativity', 'Presence'],
+    audio: 'audio/time-the-illusion.mp3'
   }
 ];

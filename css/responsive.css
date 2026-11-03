@@ -40,10 +40,5 @@
 @media (max-width: 600px) {
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .section { padding: 4rem 1.25rem; }
-  .poem-row { padding: 1rem; }
-  .player { gap: 0.4rem; }
-  .player-skip { width: 30px; }
-  .player-time { min-width: 0; font-size: 0.7rem; }
-  .player-seek { min-width: 0; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
