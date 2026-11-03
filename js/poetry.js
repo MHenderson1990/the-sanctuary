@@ -10,7 +10,6 @@ function renderPoemList() {
       <div class="poem-row-info">
         <h3 class="poem-row-title">${p.title}</h3>
       </div>
-      <div class="poem-row-tags">${p.tags.map(t => `<span class="poem-tag">${t}</span>`).join('')}</div>
       ${p.audio ? `
       <div class="player">
         <button class="player-skip" onclick="skipPoemAudio('${p.id}', -10)" aria-label="Back 10 seconds"><i class="fas fa-rotate-left"></i><span>10</span></button>

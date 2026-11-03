@@ -36,20 +36,6 @@
   color: var(--text-primary);
 }
 
-.poem-row-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-
-.poem-tag {
-  background: rgba(94,115,82,0.08);
-  border: 1px solid var(--border);
-  color: var(--lavender);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
 /* ── Inline audio player (pushed to the far right) ── */
 .player {
   display: flex;
