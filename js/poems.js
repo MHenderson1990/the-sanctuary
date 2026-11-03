@@ -12,5 +12,12 @@ const POEMS = [
     icon: '🕰️',
     tags: ['Creativity', 'Presence'],
     audio: 'audio/time-the-illusion.mp3'
+  },
+  {
+    id: 'reaching',
+    title: 'Reaching',
+    icon: '❤️',
+    tags: ['Love', 'Self-Worth'],
+    audio: 'audio/reaching.mp3'
   }
 ];
