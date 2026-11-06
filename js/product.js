@@ -16,7 +16,7 @@ function openProduct(id) {
 
   const buy = document.getElementById('productBuy');
   if (p.squareUrl) {
-    buy.textContent = 'Add to Cart';
+    buy.textContent = p.buyLabel || 'Add to Cart';
     buy.onclick = () => window.open(p.squareUrl, '_blank');
   } else {
     buy.textContent = 'Inquire';

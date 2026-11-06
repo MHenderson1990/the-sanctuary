@@ -11,7 +11,8 @@ const PRODUCTS = [
     category: 'books',
     price: '$22.22',
     image: 'FOI.jpg',
-    squareUrl: 'https://square.link/u/RI5IHSnl',
+    squareUrl: 'https://a.co/d/0cmyJtu4',   // Amazon link (field name kept so the code still works)
+    buyLabel: 'Buy on Amazon',
     description: `A tender, raw, and spiritual collection of poems for the women who have mastered distance, but long for closeness.<br><br>For the ones who crave intimacy, yet flinch when it arrives. This is for the lover girls who find themselves retreating into their own hearts, wrestling with old wounds, silent fears, and the ache of wanting more.<br><br>Told through a transformative poem sequence, this book centers around a poem titled Fear of Intimacy, accompanied by a series of complementary poems that deepen the connection. This book is for anyone ready to see themselves clearly, and continue the work of radical self love, by way of truth, healing and connection to the Divine. This is poetry for the spirit. For the lover girls who talk themselves out of love.<br><br>Fear of Intimacy holds space for your vulnerability, your mistakes, your softness, and your longing.<br>If you’ve ever feared being seen but secretly hoped someone might, this book is for you.`
   },
     {
