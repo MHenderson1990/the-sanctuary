@@ -39,6 +39,7 @@ const PRODUCTS = [
     category: 'crystal',
     price: '$25.00',
     image: 'qring.jpeg',
+    images: ['qring.jpeg', 'images/products/quartz-ring-2.jpg'],
     squareUrl: 'https://square.link/u/4jnKTZfQ',
     description: `Crowd Favorite! Yall stay asking me about this ring 🤣<br><br>The Quartz Crystal is an amplifier and can strengthen the programming of any other crystal! It’s also a great tool for:<br>cleansing, healing, enhancing clairvoyance, amplifying any energy, enhancing thoughts and intentions<br><br>Q U A R T Z is a perfect “filler”. It can be used in the place of another crystal, for the specific intention that you want to set. It’s also really good at strengthening the vibration of other crystals to make your intentions and manifestations stronger ⭐️<br><br>Copper wrapped rings can be custom-made and wrapped around any crystal of your choosing.`
   },
@@ -49,6 +50,7 @@ const PRODUCTS = [
     category: 'crystal',
     price: '$22.22',
     image: 'tiger.jpg',
+    images: ['tiger.jpg', 'images/products/bracelet-stack.jpg'],
     squareUrl: 'https://square.link/u/emFMT2gE',
     description: `For the one who moves with purpose and protects their peace. 🖤<br><br>Tiger's Eye is known to:<br>increase self worth, increase ambition and concentration, assist in accomplishing goals, activate your internal masculine energy, unblock sacral & solar plexus chakras<br><br>Black Onyx 🖤<br>blocks negativity, increases patience and determination, and sheilds your energy<br><br>Together these two are a power duo — ambition meets protection. Wear this when you need to show up fully and guard your energy at the same time ⭐️<br><br>This item can be custom created for you in a necklace, bracelet, or anklet.`
   },
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: 'crystal',
     price: '$22.22',
     image: 'pyrite.jpeg',
+    images: ['pyrite.jpeg', 'images/products/bracelet-stack.jpg'],
     squareUrl: 'https://square.link/u/e2Yd75iq',
     description: `Money moves only! 💛 This bracelet was created with one intention — abundance.<br><br>Pyrite is known for:<br>money magic!, grounding, increase success, boosting confidence, attracting prosperity and good luck, shielding against negative energy<br><br>Stack it, wear it solo, or gift it to someone who's ready to level up.<br><br>This item can be custom created for you in a necklace, bracelet, or anklet.`
   },
@@ -85,7 +88,8 @@ const PRODUCTS = [
     category: 'custom',
     price: null,
     image: 'rich.JPG',
+    images: ['rich.JPG', 'images/products/custom-pyrite-pendant.jpg', 'images/products/custom-citrine-stack.jpg'],
     squareUrl: null,
-    description: `...keep the current description for now...`
+    description: `Every custom piece is made just for you — your crystals, your intentions, your style.<br><br>Book a free consultation or send your order request, and Coco will create something that carries your energy.`
   }
 ];

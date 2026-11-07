@@ -6,9 +6,7 @@ function openProduct(id) {
   const p = PRODUCTS.find(item => item.id === id);
   if (!p) { showPage('shop'); return; }
 
-  const img = document.getElementById('productImage');
-  img.src = p.image;
-  img.alt = p.name;
+  renderGallery(p);
   document.getElementById('productCategory').textContent = p.category === 'custom' ? '' : CATEGORY_LABELS[p.category];
   document.getElementById('productName').textContent = p.name;
   document.getElementById('productPrice').textContent = p.price || 'Inquire for pricing';
@@ -44,6 +42,32 @@ function routeFromHash() {
   } else if (document.getElementById('page-product').classList.contains('active')) {
     showPage('shop');
   }
+}
+
+// ── Photo gallery: main photo on the left, clickable thumbnail strip above the button ──
+function renderGallery(p) {
+  const photos = (p.images && p.images.length) ? p.images : [p.image];
+  setMainPhoto(photos[0], p.name);
+
+  const thumbs = document.getElementById('productThumbs');
+  thumbs.hidden = photos.length < 2;   // no strip for single-photo products
+  thumbs.innerHTML = photos.map((src, i) => `
+    <button class="gallery-thumb${i === 0 ? ' active' : ''}" aria-label="View photo ${i + 1}"
+      onclick="selectThumb(this, '${src}')">
+      <img src="${src}" alt="" loading="lazy" />
+    </button>`).join('');
+  thumbs.scrollLeft = 0;
+}
+
+function setMainPhoto(src, name) {
+  const img = document.getElementById('productImage');
+  img.src = src;
+  if (name) img.alt = name;
+}
+
+function selectThumb(btn, src) {
+  setMainPhoto(src);
+  document.querySelectorAll('.gallery-thumb').forEach(b => b.classList.toggle('active', b === btn));
 }
 
 window.addEventListener('hashchange', routeFromHash);
