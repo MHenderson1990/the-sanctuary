@@ -13,10 +13,10 @@ function renderShopGrid() {
     <a class="product-card product-thumb" href="#product/${p.id}" data-category="${p.category}">
       <div class="product-image"><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>
       <div class="product-info">
-        <p class="product-category">${CATEGORY_LABELS[p.category]}</p>
+        ${p.category !== 'custom' ? `<p class="product-category">${CATEGORY_LABELS[p.category]}</p>` : ''}
         <h3 class="product-name">${p.name}</h3>
         <div class="product-footer">
-          <span class="product-price">${p.price || 'Custom Order'}</span>
+          <span class="product-price">${p.price || 'Inquire for pricing'}</span>
         </div>
       </div>
     </a>`).join('');

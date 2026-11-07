@@ -42,15 +42,7 @@ const PRODUCTS = [
     squareUrl: 'https://square.link/u/4jnKTZfQ',
     description: `Crowd Favorite! Yall stay asking me about this ring 🤣<br><br>The Quartz Crystal is an amplifier and can strengthen the programming of any other crystal! It’s also a great tool for:<br>cleansing, healing, enhancing clairvoyance, amplifying any energy, enhancing thoughts and intentions<br><br>Q U A R T Z is a perfect “filler”. It can be used in the place of another crystal, for the specific intention that you want to set. It’s also really good at strengthening the vibration of other crystals to make your intentions and manifestations stronger ⭐️<br><br>Copper wrapped rings can be custom-made and wrapped around any crystal of your choosing.`
   },
-  {
-    id: 'rich-bitch-necklace',
-    name: '💚 Rich Bitch Assorted Crystals Necklace 💚',
-    category: 'custom',
-    price: null,
-    image: 'rich.JPG',
-    squareUrl: null,
-    description: `This necklace is adorned with crystals throughout that promote abundance, wisdom connection to spirit and properties that attract money!<br><br>Pyrite - attracts money 💸, grounding<br>Amethyst - calming & enhances wisdom<br>Black Onyx - protection & grounding<br>Jade - attracts good luck<br><br>This is a CUSTOM necklace with assorted crystals, and an affirmation quote, but don’t worry — You, too, can be a rich bitch you feel me 😎`
-  },
+  
   {
     id: 'tigers-eye-onyx',
     name: "Tiger's Eye & Onyx💫",
@@ -86,5 +78,14 @@ const PRODUCTS = [
     image: 'pyjade.png',
     squareUrl: 'https://square.link/u/mjzJ3q1C',
     description: `Abundance, protection, and becoming — all in one piece. 💚<br><br>This 19" necklace was built with intention from the ground up, combining three of the most powerful stones for those who are stepping into alignment and calling in everything they deserve.<br><br>Pyrite 💎<br>money magic!, grounding, increases success, energy shielding, solar plexus activation<br><br>Jade 💚<br>attracts good luck, increases self-sufficiency, a symbol of purity and serenity, stabilizes the personality and integrates mind and body, encourages you to become your true self<br><br>Black Onyx 🖤<br>blocks negativity, increases patience and determination, helps banish old habits, assists with past-life work that is affecting the present life<br><br>Together these three are a full-circle piece — drawing in what you want, grounding you in who you are, and protecting you while you grow into it. ✨`
+  },
+  {
+    id: 'custom-orders',
+    name: 'Custom Orders',
+    category: 'custom',
+    price: null,
+    image: 'rich.JPG',
+    squareUrl: null,
+    description: `...keep the current description for now...`
   }
 ];

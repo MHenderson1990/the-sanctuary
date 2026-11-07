@@ -9,9 +9,9 @@ function openProduct(id) {
   const img = document.getElementById('productImage');
   img.src = p.image;
   img.alt = p.name;
-  document.getElementById('productCategory').textContent = CATEGORY_LABELS[p.category];
+  document.getElementById('productCategory').textContent = p.category === 'custom' ? '' : CATEGORY_LABELS[p.category];
   document.getElementById('productName').textContent = p.name;
-  document.getElementById('productPrice').textContent = p.price || 'Custom Order';
+  document.getElementById('productPrice').textContent = p.price || 'Inquire for pricing';
   document.getElementById('productDesc').innerHTML = p.description;
 
   const buy = document.getElementById('productBuy');
