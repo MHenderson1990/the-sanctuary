@@ -88,7 +88,15 @@ const PRODUCTS = [
     category: 'custom',
     price: null,
     image: 'rich.JPG',
-    images: ['rich.JPG', 'images/products/custom-pyrite-pendant.jpg', 'images/products/custom-citrine-stack.jpg'],
+    images: [
+      'rich.JPG',
+      'images/products/custom-pyrite-pendant.jpg',
+      'images/products/custom-citrine-stack.jpg',
+      'images/products/custom-word-bracelets.jpg',
+      'images/products/custom-bracelets.jpg',
+      'images/products/custom-evil-eye.jpg',
+      'images/products/custom-copper-pieces.jpg'
+    ],
     squareUrl: null,
     description: `Every custom piece is made just for you — your crystals, your intentions, your style.<br><br>Book a free consultation or send your order request, and Coco will create something that carries your energy.`
   }
