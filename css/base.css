@@ -20,21 +20,6 @@
   --white:         #FFFFFF;
   --sage:          #5E7352;
   --sage-light:    #5E7352;
-  /* legacy aliases so old inline styles still resolve */
-  --cream:         #F2E0D8;
-  --light-cream:   #EAD3C7;
-  --parchment:     #FAF1EC;
-  --nude:          #8B5E45;
-  --tan:           rgba(110,71,51,0.3);
-  --brown:         #6B5348;
-  --dark-brown:    #3B2A22;
-  --espresso:      #3B2A22;
-  --light-text:    #6B5348;
-  --text:          #3B2A22;
-  --gold:          #8B5E45;
-  --gold-light:    rgba(139,94,69,0.2);
-  --dark-sage:     #6E4733;
-  --forest:        #FAF1EC;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }

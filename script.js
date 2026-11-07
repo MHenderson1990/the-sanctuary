@@ -19,16 +19,6 @@
     showPage('services');
   }
 }
-  function closeBookingModal(e) { if (e.target === document.getElementById('bookingModal')) document.getElementById('bookingModal').classList.remove('open'); }
-
-
-  function handleAddToCart(btn) {
-    const original = btn.textContent;
-    btn.textContent = '✓ Added!';
-    btn.style.background = 'var(--dark-sage)';
-    setTimeout(() => { btn.textContent = original; btn.style.background = ''; }, 2000);
-  }
-
 
   function handleContact(e) {
   const btn = e.target.querySelector('button[type="submit"]');
