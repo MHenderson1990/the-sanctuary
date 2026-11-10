@@ -31,4 +31,10 @@
     });
   }
 
+// Links with href="#" just run their onclick (showPage, etc.) —
+// don't jump to the top of the page or change the address bar
+document.addEventListener('click', e => {
+  if (e.target.closest('a[href="#"]')) e.preventDefault();
+});
+
   initFadeIns();

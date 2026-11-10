@@ -36,3 +36,11 @@ body {
 /* Page switching (showPage toggles .active) */
 .page { display: none; }
 .page.active { display: block; }
+
+/* Visible focus ring for keyboard users (mouse clicks don't show it) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--mauve);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
