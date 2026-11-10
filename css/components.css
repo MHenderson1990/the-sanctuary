@@ -369,6 +369,21 @@ FORM FIELDS (contact + consultation forms)
 
 .form-group textarea { resize: vertical; min-height: 120px; }
 
+/* Required-field asterisk */
+.form-group label.required::after {
+  content: ' *';
+  color: var(--mauve);
+}
+
+/* "* Required fields" note at the top of every Formspree form */
+form[action*="formspree"]::before {
+  content: '* Required fields';
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 /* ════════════════════════════════════
    FOOTER
 ════════════════════════════════════ */
