@@ -257,7 +257,7 @@
               would benefit you, please schedule a consultation. In the consultation, we’ll discuss what energy you’re wanting to bring into your life and the specifics of your custom order. 
               Final pricing of custom piece will be provided during the consultation. This consultation is free/donation based. Donations can be made to $cocolovethewriter  </p>
 
-            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleConsultation(event)">
+            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="submitForm(event, '✓ Request Sent!')">
               <input type="hidden" name="_subject" value="Custom Order — Consultation Request" />
               <div class="form-row">
                 <div class="form-group">
@@ -309,7 +309,7 @@
           <div id="customFormOrder" class="custom-form-panel" hidden>
             <p class="consult-intro">Already know what you're looking for? Tell Coco about your piece below. She'll review your request and email you a price quote before anything is made — no consultation needed.</p>
 
-            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleConsultation(event)">
+            <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="submitForm(event, '✓ Request Sent!')">
               <input type="hidden" name="_subject" value="Custom Order — No Consultation" />
               <div class="form-row">
                 <div class="form-group">
@@ -577,7 +577,7 @@
 
         <div class="contact-form-wrap">
           <h3>Send a Message 💌</h3>
-          <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="handleContact(event)">
+          <form action="https://formspree.io/f/xojzvgeo" method="POST" onsubmit="submitForm(event, '✓ Message Sent!')">
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
@@ -685,6 +685,7 @@
 <script src="js/products.js"></script>
 <script src="js/shop.js"></script>
 <script src="script.js"></script>
+<script src="js/forms.js"></script>
 <script src="js/product.js"></script>
 <script src="js/poems.js"></script>
 <script src="js/poetry.js"></script>

@@ -20,12 +20,6 @@
   }
 }
 
-  function handleContact(e) {
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = '✓ Message Sent!';
-  btn.disabled = true;
-}
-
   function initFadeIns() {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -36,11 +30,5 @@
       observer.observe(el);
     });
   }
-
-function handleConsultation(event) {
-  const btn = event.target.querySelector('button[type="submit"]');
-  btn.textContent = '✓ Request Sent!';
-  btn.disabled = true;
-}
 
   initFadeIns();
