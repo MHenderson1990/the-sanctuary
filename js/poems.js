@@ -17,5 +17,11 @@ const POEMS = [
     title: 'Reaching',
     icon: '❤️',
     audio: 'audio/reaching.mp3'
+  },
+    {
+    id: 'the-patriarchy',
+    title: 'The Patriarchy',
+    icon: '⛓️',
+    audio: 'audio/the-patriarchy.mp3'
   }
 ];
