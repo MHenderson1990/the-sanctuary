@@ -595,3 +595,7 @@ footer::before {
 .pull-quote--center { margin-left: auto; margin-right: auto; text-align: center; }
 .pull-quote--center::before { left: 50%; transform: translateX(-50%); }
 .pull-quote--center figcaption { justify-content: center; }
+
+/* Version without the decorative quote mark */
+.pull-quote--no-mark { padding-top: 0; }
+.pull-quote--no-mark::before { display: none; }
