@@ -75,8 +75,6 @@
   margin-right: auto;
 }
 
-.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
 /* ════════════════════════════════════
    FEATURE BLOCKS (HOME)
 ════════════════════════════════════ */
@@ -177,6 +175,16 @@
   line-height: 1.6;
   position: relative;
   z-index: 1;
+}
+
+/* Testimonial version: sage green so it's distinct from Coco's own quote */
+.quote-banner--testimonial blockquote { color: var(--lavender); }
+
+/* Smaller, visible quote mark centered above the testimonial */
+.quote-banner--testimonial::before {
+  top: 1.5rem;
+  font-size: 6rem;
+  color: rgba(139,94,69,0.25);
 }
 
 .quote-banner cite {

@@ -537,3 +537,61 @@ footer::before {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* ════════════════════════════════════
+   PULL QUOTE — testimonials placed around the site
+════════════════════════════════════ */
+.pull-quote {
+  position: relative;
+  max-width: 620px;
+  margin: 0 0 2.5rem;
+  padding-top: 1.5rem;
+}
+
+/* Big soft quote mark behind the first line */
+.pull-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -1.4rem;
+  left: -0.6rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  line-height: 1;
+  color: rgba(139,94,69,0.18);
+  pointer-events: none;
+}
+
+.pull-quote blockquote {
+  position: relative;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  line-height: 1.5;
+  color: var(--lavender);
+}
+
+/* ── Name: short cinnamon line + spaced caps ── */
+.pull-quote figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--mauve);
+}
+.pull-quote figcaption::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--mauve);
+}
+
+/* Centered version (Home hero) */
+.pull-quote--center { margin-left: auto; margin-right: auto; text-align: center; }
+.pull-quote--center::before { left: 50%; transform: translateX(-50%); }
+.pull-quote--center figcaption { justify-content: center; }
