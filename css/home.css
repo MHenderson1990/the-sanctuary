@@ -177,15 +177,6 @@
   z-index: 1;
 }
 
-/* Testimonial version: sage green so it's distinct from Coco's own quote */
-.quote-banner--testimonial blockquote { color: var(--lavender); }
-
-/* Smaller, visible quote mark centered above the testimonial */
-.quote-banner--testimonial::before {
-  top: 1.5rem;
-  font-size: 6rem;
-  color: rgba(139,94,69,0.25);
-}
 
 .quote-banner cite {
   font-family: 'Raleway', sans-serif;
@@ -456,23 +447,6 @@
   line-height: 1.85;
   margin-bottom: 1.2rem;
   font-weight: 400;
-}
-
-.bio-pull-quote {
-  background: rgba(94,115,82,0.06);
-  border-left: 3px solid var(--mauve);
-  border-radius: 0 12px 12px 0;
-  padding: 1.2rem 1.5rem;
-  margin: 1.5rem 0 2rem;
-}
-
-.bio-pull-quote p {
-  font-family: 'Playfair Display', serif !important;
-  font-style: italic !important;
-  color: var(--text-primary) !important;
-  font-size: 1rem !important;
-  margin: 0 !important;
-  line-height: 1.6 !important;
 }
 
 .bio-stats { display: flex; gap: 0; margin-bottom: 2.5rem; }
